@@ -4,13 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .transparent-nav {
-    @apply bg-transparent text-white;
-  }
-  .bg-nav {
-    @apply bg-white text-black;
-  }
+.transparent-nav {
+  @apply bg-transparent text-white shadow-sm;
+  /* background-color: transparent;
+  color: white; */
+}
+.bg-nav {
+  @apply backdrop-filter backdrop-blur bg-white bg-opacity-30 shadow;
+  /* background-color: white;
+  color: gray; */
 }
 
 .diamond {
