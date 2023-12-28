@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .transparent-nav {
-  @apply bg-transparent text-white shadow-sm;
+  @apply bg-transparent shadow;
   /* background-color: transparent;
   color: white; */
 }
@@ -13,6 +13,24 @@
   @apply backdrop-filter backdrop-blur bg-white bg-opacity-30 shadow;
   /* background-color: white;
   color: gray; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-700;
 }
 
 .diamond {
