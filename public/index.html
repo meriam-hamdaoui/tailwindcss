@@ -20,33 +20,39 @@
         class="transition-all absolute right-0 left-0 z-10 transparent-nav text-white"
       >
         <div
-          class="w-9/12 mx-auto py-5 flex justify-between items-center font-comf"
+          class="w-11/12 lg:w-10/12 xl:w-8/12 mx-auto py-5 flex justify-between items-center font-comf"
         >
           <div>
-            <a href="/public/index.html" class="text-lg">Tail Listing</a>
+            <a href="/public/index.html" class="text-sm lg:text-lg"
+              >Tail Listing</a
+            >
           </div>
           <div>
             <button
-              class="py-2 px-4 rounded-md border border-amber-500 bg-transparent text-amber-500 hover:bg-amber-500 hover:text-white transition-all"
+              class="text-sm py-2 px-4 rounded-md border border-amber-500 bg-transparent text-amber-500 hover:bg-amber-500 hover:text-white transition-all"
             >
               Add Listing
             </button>
           </div>
           <div class="space-x-4">
-            <button class="text-lg">Sign In</button>
-            <button class="text-lg">Sign Up</button>
+            <button class="text-sm lg:text-lg">Sign In</button>
+            <button class="text-sm lg:text-lg">Sign Up</button>
           </div>
         </div>
       </nav>
     </div>
 
     <!-- banner -->
-    <div id="hero-banner" class="relative h-screen">
-      <img
+    <div
+      id="hero-banner"
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('../src/assets/images/hero/hero_4.jpg')"
+    >
+      <!-- <img
         src="../src//assets//images/hero/hero_4.jpg"
         alt="hero_4"
         class="h-full w-full object-cover"
-      />
+      /> -->
       <div class="absolute inset-0 bg-black/70"></div>
       <div class="absolute inset-0 h-full w-full">
         <div class="flex min-h-full w-full items-center justify-center">
@@ -54,15 +60,19 @@
           <div class="space-y-6">
             <!-- text -->
             <div id="hero-header" class="text-white text-center">
-              <p class="text-4xl capitalize font-bold mb-4 font-comf">
+              <p
+                class="text-2xl lg:text-4xl capitalize font-bold mb-4 font-comf"
+              >
                 Discover places that people love
               </p>
-              <p class="text-lg">
+              <p class="text-lg w-8/12 mx-auto">
                 We will help you find the best places in the World
               </p>
             </div>
             <!-- inputs -->
-            <div class="flex gap-5">
+            <div
+              class="flex flex-col lg:flex-row items-center justify-center gap-5"
+            >
               <div>
                 <input
                   type="text"
@@ -79,7 +89,7 @@
               </div>
               <div>
                 <button
-                  class="rounded-md py-2.5 px-6 bg-amber-500 text-lg text-white hover:bg-amber-600"
+                  class="rounded-md py-2 lg:py-2.5 px-4 lg:px-6 bg-amber-500 text-lg text-white hover:bg-amber-600"
                 >
                   <span class="material-icons align-middle">search</span>
                   Search
@@ -87,7 +97,7 @@
               </div>
             </div>
             <!-- popular places list -->
-            <div>
+            <div class="w-10/12 mx-auto">
               <ul
                 class="flex flex-wrap gap-5 justify-center text-sm text-white"
               >
@@ -156,7 +166,7 @@
     <main>
       <!-- popular places section -->
       <section class="bg-slate-100 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 md:w-10/12 lg:w-8/12 mx-auto">
           <!-- section title -->
           <div class="text-center mb-12">
             <p class="text-4xl font-bold text-gray-600 mb-3">Popular Places</p>
@@ -165,7 +175,9 @@
 
           <!-- cards -->
           <div>
-            <div class="grid grid-cols-3 gap-10 mx-auto">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto"
+            >
               <!-- card one -->
               <div
                 class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
@@ -626,7 +638,7 @@
       <!-- discover by categories -->
       <section class="bg-gray-50 py-32">
         <!-- paragraphs -->
-        <div class="w-8/12 mx-auto">
+        <div class="w-10/12 md:w-8/12 mx-auto">
           <div class="text-center mb-12">
             <p class="text-gray-600 text-4xl font-bold mb-3">
               Discover by Categories
@@ -634,7 +646,9 @@
             <p class="text-gray-600">Discover Places by Categories</p>
           </div>
           <div>
-            <div class="grid grid-cols-4 gap-10">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10"
+            >
               <!-- a 1 -->
               <a
                 href="#"
@@ -778,7 +792,7 @@
 
       <!-- collections -->
       <section class="bg-slate-100 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-10/12 md:8/12 mx-auto">
           <div class="text-center mb-12">
             <p class="text-gray-600 text-4xl font-bold mb-3">Collections</p>
             <p class="text-gray-600">
@@ -786,173 +800,179 @@
             </p>
           </div>
 
-          <!-- cards -->
-          <div class="grid grid-cols-4 gap-10">
-            <!-- one -->
+          <div>
+            <!-- cards -->
             <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10"
             >
-              <img
-                src="../src/assets/images/dental 1.jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
+              <!-- one -->
               <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">Newly Opened</p>
-                <p class="text-white text-sm">21 Places</p>
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/dental 1.jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">Newly Opened</p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- two -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (5).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">
+                    Traditional Restaurants
+                  </p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- three -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (1).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">
+                    Trending This Week
+                  </p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- four -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (2).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">Luxury Houses</p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- five -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (7).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">Cheap In Town</p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- six -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (4).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">
+                    Fancy Restaurants
+                  </p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- seven -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (6).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">Happy Meal</p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
+              </div>
+              <!-- eight -->
+              <div
+                class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="../src/assets/images/res-pic (3).jpg"
+                  alt=""
+                  class="rounded w-full h-full object-cover shadow"
+                />
+                <div
+                  class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
+                ></div>
+                <div class="absolute bottom-2 left-3">
+                  <p class="text-white text-lg font-semibold">
+                    Romantic Evening
+                  </p>
+                  <p class="text-white text-sm">21 Places</p>
+                </div>
               </div>
             </div>
-            <!-- two -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (5).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">
-                  Traditional Restaurants
-                </p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
+            <div class="mt-12 text-center">
+              <button
+                class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600"
+              >
+                🎁 Discover More
+              </button>
             </div>
-            <!-- three -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (1).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">
-                  Trending This Week
-                </p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
-            </div>
-            <!-- four -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (2).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">Luxury Houses</p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
-            </div>
-            <!-- five -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (7).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">Cheap In Town</p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
-            </div>
-            <!-- six -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (4).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">
-                  Fancy Restaurants
-                </p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
-            </div>
-            <!-- seven -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (6).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">Happy Meal</p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
-            </div>
-            <!-- eight -->
-            <div
-              class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
-            >
-              <img
-                src="../src/assets/images/res-pic (3).jpg"
-                alt=""
-                class="rounded w-full h-full object-cover shadow"
-              />
-              <div
-                class="absolute bg-gradient-to-t from-black via-transparent inset-0 rounded"
-              ></div>
-              <div class="absolute bottom-2 left-3">
-                <p class="text-white text-lg font-semibold">Romantic Evening</p>
-                <p class="text-white text-sm">21 Places</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-12 text-center">
-            <button
-              class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600"
-            >
-              🎁 Discover More
-            </button>
           </div>
         </div>
       </section>
 
       <!-- teams -->
       <section class="bg-gray-50 py-36 relative">
-        <div class="w-8/12 mx-auto">
-          <div class="flex items-center gap-3">
-            <div class="w-1/2">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
               <!-- svg background -->
               <div
-                class="diamond w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-30"
+                class="hidden lg:inline diamond w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-30"
               ></div>
               <!-- fending out for the svg -->
               <div
-                class="w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"
+                class="hidden lg:inline w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"
               ></div>
               <div class="flex justify-center gap-12">
                 <div class="flex flex-col gap-12">
@@ -960,7 +980,7 @@
                     <img
                       src="../src/assets/images/team/smile.jpeg"
                       alt=""
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                     />
                     <div
                       class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md"
@@ -974,7 +994,7 @@
                     <img
                       src="../src/assets/images/team/smile_4.jpg"
                       alt=""
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                     />
                     <div
                       class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md"
@@ -990,7 +1010,7 @@
                     <img
                       src="../src/assets/images/team/smile_man_1.jpg"
                       alt=""
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                     />
                     <div
                       class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md"
@@ -1004,7 +1024,7 @@
                     <img
                       src="../src/assets/images/team/smile_6.jpg"
                       alt=""
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                     />
                     <div
                       class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md"
@@ -1017,7 +1037,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
               <p class="text-sm font-bold uppercase text-indigo-500 mb-1">
                 Our Support Heroes
               </p>
@@ -1058,18 +1078,20 @@
           class="-z-10 bg-slate-50 w-8/12 absolute bottom-0 right-0 top-16 rounded-tl-3xl"
         ></div>
         <!-- container div -->
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <!-- heading -->
-          <div class="mb-20">
-            <p class="text-4xl font-libre text-gray-600 w-5/12">
+          <div class="mb-10 md:mb-20">
+            <p
+              class="text-3xl md:text-4xl font-libre text-gray-600 w-full lg:w-5/12"
+            >
               What Our Customers Are Saying?
             </p>
           </div>
           <!-- columns -->
-          <div class="flex">
-            <div class="w-1/2">
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
               <!-- img + icons + buttons -->
-              <div class="w-10/12 h-72 relative mb-6">
+              <div class="w-full md:w-10/12 h-72 relative mb-6">
                 <!-- svg -->
                 <div
                   class="stars opacity-30 h-48 w-32 absolute -top-24 -left-16 -z-10"
@@ -1111,7 +1133,7 @@
                 </button>
               </div>
             </div>
-            <div class="w-1/2 text-gray-600">
+            <div class="w-full lg:w-1/2 text-gray-600">
               <p class="text-xl capitalize mb-3">
                 Help Us Improve Our Productivity
               </p>
@@ -1130,117 +1152,111 @@
       </section>
 
       <!-- contact us -->
-      <section class="bg-slate-100 py-32">
-        <div class="w-9/12 mx-auto">
-          <div class="shadow-lg rounded-xl relative">
-            <!-- img + overlay -->
-            <img
-              src="../src/assets/images/contact-us/photo-1524069290683-0457abfe42c3.jpg"
-              alt=""
-              class="w-full h-[46rem] object-cover rounded-xl"
-            />
-            <div class="bg-black/70 absolute inset-0 h-full rounded-xl"></div>
+      <section class="bg-slate-100 lg:py-32">
+        <div class="w-full lg:w-11/12 xl:w-9/12 mx-auto">
+          <div
+            class="shadow-lg lg:rounded-xl py-12 px-12 relative bg-cover bg-center z-10"
+            style="
+              background-image: url('../src/assets/images/contact-us/photo-1524069290683-0457abfe42c3.jpg');
+            "
+          >
+            <!-- overlay -->
+            <div
+              class="bg-black/70 absolute inset-0 h-full lg:rounded-xl -z-10"
+            ></div>
             <!-- content -->
-            <div class="absolute right-8 left-8 top-24">
-              <div class="flex items-end">
-                <!-- first column -->
-                <div class="w-1/2 text-gray-100">
-                  <div class="mb-5">
-                    <p class="text-4xl font-bold font-comf mb-5">Find Us</p>
-                    <div class="flex gap-6">
-                      <div class="border-r border-white pr-4">
-                        <p class="font-bold text-2xl font-libre">New York</p>
-                        <p class="text-sm">
-                          Derrick Street Boston, MA 02130 USA
-                        </p>
-                      </div>
-                      <div class="border-r border-white pr-4">
-                        <p class="font-bold text-2xl font-libre">ِCalifornia</p>
-                        <p class="text-sm">
-                          Derrick Street Boston, MA 02130 USA
-                        </p>
-                      </div>
-                      <div>
-                        <p class="font-bold text-2xl font-libre">LA</p>
-                        <p class="text-sm">
-                          Derrick Street Boston, MA 02130 USA
-                        </p>
-                      </div>
+            <div
+              class="flex flex-col-reverse lg:flex-row items-end gap-12 lg:gap-0"
+            >
+              <!-- first column -->
+              <div class="w-full lg:w-1/2 text-gray-100">
+                <div class="mb-5">
+                  <p class="text-4xl font-bold font-comf mb-5">Find Us</p>
+                  <div class="flex gap-6">
+                    <div class="border-r border-white pr-4">
+                      <p class="font-bold text-2xl font-libre">New York</p>
+                      <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                    </div>
+                    <div class="border-r border-white pr-4">
+                      <p class="font-bold text-2xl font-libre">ِCalifornia</p>
+                      <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                    </div>
+                    <div>
+                      <p class="font-bold text-2xl font-libre">LA</p>
+                      <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
                     </div>
                   </div>
                 </div>
-                <!-- second column -->
-                <div class="w-1/2">
-                  <div
-                    class="bg-white max-w-lg rounded-md shadow p-6 ml-auto space-y-6 text-gray-600"
-                  >
-                    <div>
-                      <p class="text-4xl font-bold font-monte mb-4">
-                        Get In Touch
-                      </p>
-                      <p class="">Need help or have some feedback for us?</p>
-                      <p class="">
-                        Fill out the form below to contact our team.
-                      </p>
-                    </div>
-                    <form action="" class="space-y-4">
-                      <div class="flex text-gray-600 gap-10">
-                        <div>
-                          <label for="first-name"> First Name</label>
-                          <input
-                            type="text"
-                            name=""
-                            id=""
-                            class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                            id="first-name"
-                            placeholder="John"
-                          />
-                        </div>
-                        <div>
-                          <label for="last-name"> Last Name</label>
-                          <input
-                            type="text"
-                            name=""
-                            id=""
-                            class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                            id="last-name"
-                            placeholder="Doe"
-                          />
-                        </div>
-                      </div>
-
+              </div>
+              <!-- second column -->
+              <div class="w-full lg:w-1/2">
+                <div
+                  class="bg-white max-w-lg rounded-md shadow p-6 mx-auto lg:ml-auto space-y-6 text-gray-600"
+                >
+                  <div>
+                    <p class="text-4xl font-bold font-monte mb-4">
+                      Get In Touch
+                    </p>
+                    <p class="">Need help or have some feedback for us?</p>
+                    <p class="">Fill out the form below to contact our team.</p>
+                  </div>
+                  <form action="" class="space-y-4">
+                    <div class="flex text-gray-600 gap-10">
                       <div>
-                        <label for="email">Email</label>
+                        <label for="first-name"> First Name</label>
                         <input
-                          type="email"
+                          type="text"
+                          name=""
+                          id=""
                           class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                          id="email"
-                          placeholder="mail@example.com"
+                          id="first-name"
+                          placeholder="John"
                         />
                       </div>
-
                       <div>
-                        <label for="message">Message</label>
-                        <textarea
+                        <label for="last-name"> Last Name</label>
+                        <input
+                          type="text"
+                          name=""
+                          id=""
                           class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                          id="message"
-                          placeholder="Good Job! I only have a question..."
-                          rows="4"
-                        ></textarea>
+                          id="last-name"
+                          placeholder="Doe"
+                        />
                       </div>
+                    </div>
 
-                      <div>
-                        <button
-                          class="py-2 px-3 rounded-md shadow bg-indigo-600 text-white hover:bg-indigo-500 hover:shadow-xl"
+                    <div>
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                        id="email"
+                        placeholder="mail@example.com"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="message">Message</label>
+                      <textarea
+                        class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                        id="message"
+                        placeholder="Good Job! I only have a question..."
+                        rows="4"
+                      ></textarea>
+                    </div>
+
+                    <div>
+                      <button
+                        class="py-2 px-3 rounded-md shadow bg-indigo-600 text-white hover:bg-indigo-500 hover:shadow-xl"
+                      >
+                        <span class="material-icons align-middle mr-1"
+                          >local_shipping</span
                         >
-                          <span class="material-icons align-middle mr-1"
-                            >local_shipping</span
-                          >
-                          Get In Touch
-                        </button>
-                      </div>
-                    </form>
-                  </div>
+                        Get In Touch
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -1250,7 +1266,7 @@
 
       <!-- features -->
       <section class="bg-gray-50 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <!-- heading -->
           <div class="text-center text-gray-600 mb-12">
             <p class="text-bold text-4xl mb-2">Our Valuable Features</p>
@@ -1260,7 +1276,9 @@
             </p>
           </div>
           <!-- feature card -->
-          <div class="grid grid-cols-3 gap-16">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 xl:gap-16"
+          >
             <div
               class="group hover:bg-gray-500 hover:shadow-lg p-4 rounded-md transition-all"
             >
@@ -1293,7 +1311,6 @@
                 entis. Similibus essentiae.
               </p>
             </div>
-
             <div
               class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
             >
@@ -1321,7 +1338,6 @@
                 entis. Similibus essentiae.
               </p>
             </div>
-
             <div
               class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
             >
@@ -1349,7 +1365,6 @@
                 entis. Similibus essentiae.
               </p>
             </div>
-
             <div
               class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
             >
@@ -1377,7 +1392,6 @@
                 entis. Similibus essentiae.
               </p>
             </div>
-
             <div
               class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
             >
@@ -1405,7 +1419,6 @@
                 entis. Similibus essentiae.
               </p>
             </div>
-
             <div
               class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
             >
@@ -1437,7 +1450,7 @@
 
       <!-- loading section : showed when fetching data from backend -->
       <section class="bg-slate-100 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <div class="text-center text-gray-600 mb-12">
             <p class="text-bold text-4xl mb-2">Blog Posts</p>
             <p>
@@ -1445,7 +1458,7 @@
               voluptates eligendi molestiae.
             </p>
           </div>
-          <div class="grid grid-cols-3 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div
               class="bg-white rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
             >
@@ -1637,8 +1650,10 @@
 
     <!-- footer section -->
     <footer class="bg-white py-14 border-t">
-      <div class="w-8/12 mx-auto">
-        <div class="flex justify-between py-12">
+      <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row justify-between py-0 lg:py-12 gap-12 lg:gap-0"
+        >
           <div>
             <p class="uppercase font-bold mb-2 text-gray-600">Company</p>
             <ul>
