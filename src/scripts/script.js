@@ -41,3 +41,30 @@ const scrollNavbar = () => {
   navbar.classList.replace(...navTextColor);
 };
 window.addEventListener("scroll", scrollNavbar);
+
+/** dark theme on toggle button */
+
+const toggleBtn = document.querySelector("#toggle-btn");
+
+// On page load, it will look for a theme or take the default theme on the used media
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+  toggleBtn.checked = true;
+} else {
+  document.documentElement.classList.remove("dark");
+  toggleBtn.checked = false;
+}
+
+const darkTheme = (e) => {
+  let isChecked = e.target.checked;
+
+  document.documentElement.classList.replace(
+    ...(isChecked ? ["light", "dark"] : ["dark", "light"])
+  );
+  localStorage.theme = isChecked ? "dark" : "light";
+};
+document.querySelector("#toggle-btn").addEventListener("change", darkTheme);

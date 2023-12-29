@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
     <div class="sticky top-0 z-50">
       <nav
         id="navbar"
-        class="transition-all absolute right-0 left-0 z-10 transparent-nav text-white"
+        class="transition-all absolute right-0 left-0 z-10 transparent-nav text-white dark:text-gray-100"
       >
         <div
           class="w-11/12 lg:w-10/12 xl:w-8/12 mx-auto py-5 flex justify-between items-center font-comf"
@@ -77,14 +77,14 @@
                 <input
                   type="text"
                   placeholder="Location"
-                  class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none"
+                  class="rounded-md w-80 bg-white dark:bg-gray-800 text-gray-600 py-3 px-4 focus:outline-none"
                 />
               </div>
               <div>
                 <input
                   type="text"
                   placeholder="I'm Looking for..."
-                  class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none"
+                  class="rounded-md w-80 bg-white dark:bg-gray-800 text-gray-600 py-3 px-4 focus:outline-none"
                 />
               </div>
               <div>
@@ -163,14 +163,18 @@
     </div>
 
     <!-- main content -->
-    <main>
+    <main class="dark:divide-y dark:divide-gray-700">
       <!-- popular places section -->
-      <section class="bg-slate-100 py-32">
+      <section class="bg-slate-100 dark:bg-gray-800 py-32">
         <div class="w-8/12 md:w-10/12 lg:w-8/12 mx-auto">
           <!-- section title -->
           <div class="text-center mb-12">
-            <p class="text-4xl font-bold text-gray-600 mb-3">Popular Places</p>
-            <p class="text-gray-600">Discover Most Searched Places</p>
+            <p class="text-4xl font-bold text-gray-600 dark:text-gray-100 mb-3">
+              Popular Places
+            </p>
+            <p class="text-gray-600 dark:text-gray-100">
+              Discover Most Searched Places
+            </p>
           </div>
 
           <!-- cards -->
@@ -180,7 +184,7 @@
             >
               <!-- card one -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -197,12 +201,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
                     Dr. Someone Clinic
                   </p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -228,7 +234,7 @@
 
               <!-- card two -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -245,12 +251,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
                     Zee Mobile Repair
                   </p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -281,7 +289,7 @@
 
               <!-- card three -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -298,10 +306,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">Grade Gym</p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                    Grade Gym
+                  </p>
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -327,7 +339,7 @@
 
               <!-- card four -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -344,12 +356,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
                     Mulu Burger House
                   </p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -375,7 +389,7 @@
 
               <!-- card five -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -392,12 +406,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
                     Bete Fashion & Beauty
                   </p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -423,7 +439,7 @@
 
               <!-- card six -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -440,12 +456,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
                     Our Fruit Clinic
                   </p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -476,7 +494,7 @@
 
               <!-- card seven -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -493,10 +511,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">The Best Louche</p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                    The Best Louche
+                  </p>
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -527,7 +549,7 @@
 
               <!-- card eight -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -544,12 +566,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
                     Indian Traditional Food
                   </p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -575,7 +599,7 @@
 
               <!-- card nine -->
               <div
-                class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
+                class="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
               >
                 <div class="h-48 overflow-hidden">
                   <img
@@ -592,10 +616,14 @@
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">grade</span>
                     <span class="material-icons text-amber-400">star_half</span>
-                    <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100"
+                      >294 Reviews</span
+                    >
                   </div>
-                  <p class="text-lg font-bold text-gray-600">Couples Dinner</p>
-                  <p class="text-sm text-gray-600">
+                  <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                    Couples Dinner
+                  </p>
+                  <p class="text-sm text-gray-600 dark:text-gray-100">
                     <span
                       class="material-icons align-middle text-gray-5OO -ml-1"
                       >place</span
@@ -626,7 +654,7 @@
             </div>
             <div class="mt-12 text-center">
               <button
-                class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600"
+                class="rounded-md py-2.5 px-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-500 text-lg shadow hover:shadow-lg text-gray-600 dark:text-gray-100"
               >
                 🚀 Discover More
               </button>
@@ -636,14 +664,16 @@
       </section>
 
       <!-- discover by categories -->
-      <section class="bg-gray-50 py-32">
+      <section class="bg-gray-50 dark:bg-gray-800 py-32">
         <!-- paragraphs -->
         <div class="w-10/12 md:w-8/12 mx-auto">
           <div class="text-center mb-12">
-            <p class="text-gray-600 text-4xl font-bold mb-3">
+            <p class="text-gray-600 dark:text-gray-100 text-4xl font-bold mb-3">
               Discover by Categories
             </p>
-            <p class="text-gray-600">Discover Places by Categories</p>
+            <p class="text-gray-600 dark:text-gray-100">
+              Discover Places by Categories
+            </p>
           </div>
           <div>
             <div
@@ -652,7 +682,7 @@
               <!-- a 1 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src//assets/images/icons/566024_coffee_cafe_cup_drink_espresso_icon.png"
@@ -660,7 +690,9 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
                     Coffee & Tea
                   </p>
                 </div>
@@ -669,7 +701,7 @@
               <!-- a 2 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src//assets/images/icons/531911_camera_device_entertainment_film_media_icon.png"
@@ -677,7 +709,9 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
                     Entertainment
                   </p>
                 </div>
@@ -686,7 +720,7 @@
               <!-- a 3 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src/assets/images/icons/hotel.png"
@@ -694,7 +728,9 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
                     Hotels & Travel
                   </p>
                 </div>
@@ -703,7 +739,7 @@
               <!-- a 4 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src/assets/images/icons/health.png"
@@ -711,7 +747,9 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
                     Health & Medical
                   </p>
                 </div>
@@ -720,7 +758,7 @@
               <!-- a 5 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src//assets/images/icons/school.png"
@@ -728,14 +766,18 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">Education</p>
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
+                    Education
+                  </p>
                 </div>
               </a>
 
               <!-- a 6 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src//assets/images/icons/automotive.png"
@@ -743,14 +785,18 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">Automotive</p>
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
+                    Automotive
+                  </p>
                 </div>
               </a>
 
               <!-- a 7 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src//assets/images/icons/home.png"
@@ -758,7 +804,9 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
                     Home Service
                   </p>
                 </div>
@@ -767,7 +815,7 @@
               <!-- a 8 -->
               <a
                 href="#"
-                class="p-4 bg-white w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
+                class="p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow hover:shadow-lg transition-all space-y-5 rounded-lg"
               >
                 <img
                   src="../src//assets/images/icons/shopping.png"
@@ -775,13 +823,17 @@
                   class="w-32 h-32 mx-auto rounded-full"
                 />
                 <div class="space-y-2 text-center">
-                  <p class="text-gray-700 text-lg font-semibold">Shopping</p>
+                  <p
+                    class="text-gray-700 dark:text-gray-100 text-lg font-semibold"
+                  >
+                    Shopping
+                  </p>
                 </div>
               </a>
             </div>
             <div class="mt-12 text-center">
               <button
-                class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600"
+                class="rounded-md py-2.5 px-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-500 text-lg shadow hover:shadow-lg text-gray-600 dark:text-gray-100"
               >
                 🎈 Discover More
               </button>
@@ -791,11 +843,13 @@
       </section>
 
       <!-- collections -->
-      <section class="bg-slate-100 py-32">
+      <section class="bg-slate-100 dark:bg-gray-800 py-32">
         <div class="w-10/12 md:8/12 mx-auto">
           <div class="text-center mb-12">
-            <p class="text-gray-600 text-4xl font-bold mb-3">Collections</p>
-            <p class="text-gray-600">
+            <p class="text-gray-600 dark:text-gray-100 text-4xl font-bold mb-3">
+              Collections
+            </p>
+            <p class="text-gray-600 dark:text-gray-100">
               Discover List of Top Places By Collection
             </p>
           </div>
@@ -952,7 +1006,7 @@
             </div>
             <div class="mt-12 text-center">
               <button
-                class="rounded-md py-2.5 px-6 bg-white border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600"
+                class="rounded-md py-2.5 px-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-500 text-lg shadow hover:shadow-lg text-gray-600 dark:text-gray-100"
               >
                 🎁 Discover More
               </button>
@@ -962,7 +1016,7 @@
       </section>
 
       <!-- teams -->
-      <section class="bg-gray-50 py-36 relative">
+      <section class="bg-gray-50 dark:bg-gray-800 py-36 relative">
         <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <div class="flex flex-col lg:flex-row items-center gap-12">
             <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
@@ -972,7 +1026,7 @@
               ></div>
               <!-- fending out for the svg -->
               <div
-                class="hidden lg:inline w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"
+                class="hidden lg:inline w-1/2 bg-gradient-to-l from-gray-50 dark:from-gray-800 via-transparent absolute top-0 left-0 bottom-0 h-full"
               ></div>
               <div class="flex justify-center gap-12">
                 <div class="flex flex-col gap-12">
@@ -1041,7 +1095,9 @@
               <p class="text-sm font-bold uppercase text-indigo-500 mb-1">
                 Our Support Heroes
               </p>
-              <p class="text-4xl font-bold text-gray-600">Meet The Team</p>
+              <p class="text-4xl font-bold text-gray-600 dark:text-gray-100">
+                Meet The Team
+              </p>
               <p class="mt-3 text-gray-500 text-lg lg:text-base xl:text-lg">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -1072,17 +1128,17 @@
       </section>
 
       <!-- testimonials -->
-      <section class="bg-white py-36 relative z-10">
+      <section class="bg-white dark:bg-gray-800 py-36 relative z-10">
         <!-- bg div -->
         <div
-          class="-z-10 bg-slate-50 w-8/12 absolute bottom-0 right-0 top-16 rounded-tl-3xl"
+          class="-z-10 bg-slate-50 dark:bg-gray-800 dark:border dark:border-gray-700 w-8/12 absolute bottom-0 right-0 top-16 rounded-tl-3xl"
         ></div>
         <!-- container div -->
         <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <!-- heading -->
           <div class="mb-10 md:mb-20">
             <p
-              class="text-3xl md:text-4xl font-libre text-gray-600 w-full lg:w-5/12"
+              class="text-3xl md:text-4xl font-libre text-gray-600 dark:text-gray-100 w-full lg:w-5/12"
             >
               What Our Customers Are Saying?
             </p>
@@ -1109,7 +1165,7 @@
                   </div>
                 </div>
                 <img
-                  class="w-full h-full object-cover rounded-md shadow-md"
+                  class="w-full h-full object-cover rounded-md shadow-md dark:shadow-md"
                   src="../src/assets/images/testimonials/testimonial-2.jpg"
                   alt="testimonial-2"
                 />
@@ -1133,7 +1189,7 @@
                 </button>
               </div>
             </div>
-            <div class="w-full lg:w-1/2 text-gray-600">
+            <div class="w-full lg:w-1/2 text-gray-600 dark:text-gray-100">
               <p class="text-xl capitalize mb-3">
                 Help Us Improve Our Productivity
               </p>
@@ -1152,7 +1208,7 @@
       </section>
 
       <!-- contact us -->
-      <section class="bg-slate-100 lg:py-32">
+      <section class="bg-slate-100 dark:bg-gray-800 lg:py-32">
         <div class="w-full lg:w-11/12 xl:w-9/12 mx-auto">
           <div
             class="shadow-lg lg:rounded-xl py-12 px-12 relative bg-cover bg-center z-10"
@@ -1191,7 +1247,7 @@
               <!-- second column -->
               <div class="w-full lg:w-1/2">
                 <div
-                  class="bg-white max-w-lg rounded-md shadow p-6 mx-auto lg:ml-auto space-y-6 text-gray-600"
+                  class="bg-white dark:bg-gray-800 max-w-lg rounded-md shadow p-6 mx-auto lg:ml-auto space-y-6 text-gray-600 dark:text-gray-100"
                 >
                   <div>
                     <p class="text-4xl font-bold font-monte mb-4">
@@ -1201,14 +1257,14 @@
                     <p class="">Fill out the form below to contact our team.</p>
                   </div>
                   <form action="" class="space-y-4">
-                    <div class="flex text-gray-600 gap-10">
+                    <div class="flex text-gray-600 dark:text-gray-100 gap-10">
                       <div>
                         <label for="first-name"> First Name</label>
                         <input
                           type="text"
                           name=""
                           id=""
-                          class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                          class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5"
                           id="first-name"
                           placeholder="John"
                         />
@@ -1219,7 +1275,7 @@
                           type="text"
                           name=""
                           id=""
-                          class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                          class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5"
                           id="last-name"
                           placeholder="Doe"
                         />
@@ -1230,7 +1286,7 @@
                       <label for="email">Email</label>
                       <input
                         type="email"
-                        class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                        class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5"
                         id="email"
                         placeholder="mail@example.com"
                       />
@@ -1239,7 +1295,7 @@
                     <div>
                       <label for="message">Message</label>
                       <textarea
-                        class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                        class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5"
                         id="message"
                         placeholder="Good Job! I only have a question..."
                         rows="4"
@@ -1265,10 +1321,10 @@
       </section>
 
       <!-- features -->
-      <section class="bg-gray-50 py-32">
+      <section class="bg-gray-50 dark:bg-gray-800 py-32">
         <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <!-- heading -->
-          <div class="text-center text-gray-600 mb-12">
+          <div class="text-center text-gray-600 dark:text-gray-100 mb-12">
             <p class="text-bold text-4xl mb-2">Our Valuable Features</p>
             <p>
               Lorem ipsum dolor sit amet consectet. Delectus sequi illum
@@ -1279,11 +1335,12 @@
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 xl:gap-16"
           >
+            <!-- first card has a different style from the others using the group propriety -->
             <div
-              class="group hover:bg-gray-500 hover:shadow-lg p-4 rounded-md transition-all"
+              class="group hover:bg-gray-500 hover:shadow-lg p-4 rounded-md transition-all dark:hover:bg-gray-700 border border-transparent dark:hover:border-gray-600"
             >
               <button
-                class="group-hover:bg-black text-gray-600 bg-slate-100 p-2 rounded-md"
+                class="group-hover:bg-black dark:group-hover:bg-gray-800 text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1302,19 +1359,24 @@
                 </svg>
               </button>
               <p
-                class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600"
+                class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100"
               >
                 Unlimited Chat
               </p>
-              <p class="group-hover:text-white text-gray-500">
+              <p
+                class="group-hover:text-white text-gray-500 dark:text-gray-100"
+              >
                 Actualis at conscius supponam ac. Vocem si longo mo co veris
                 entis. Similibus essentiae.
               </p>
             </div>
+
             <div
-              class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
+              class="hover:bg-white dark:hover:bg-gray-800 border border-transparent dark:hover:border-gray-700 hover:shadow-lg p-4 rounded-md transition-all"
             >
-              <button class="text-gray-600 bg-slate-100 p-2 rounded-md">
+              <button
+                class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1330,18 +1392,23 @@
                   />
                 </svg>
               </button>
-              <p class="text-gray-600 text-xl font-bold mt-3 mb-2">
+              <p
+                class="text-gray-600 dark:text-gray-100 text-xl font-bold mt-3 mb-2"
+              >
                 Multiple Agent
               </p>
-              <p class="text-gray-600">
+              <p class="text-gray-600 dark:text-gray-100">
                 Actualis at conscius supponam ac. Vocem si longo mo co veris
                 entis. Similibus essentiae.
               </p>
             </div>
+
             <div
-              class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
+              class="hover:bg-white dark:hover:bg-gray-800 border border-transparent dark:hover:border-gray-700 hover:shadow-lg p-4 rounded-md transition-all"
             >
-              <button class="text-gray-600 bg-slate-100 p-2 rounded-md">
+              <button
+                class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1357,18 +1424,23 @@
                   />
                 </svg>
               </button>
-              <p class="text-gray-600 text-xl font-bold mt-3 mb-2">
+              <p
+                class="text-gray-600 dark:text-gray-100 text-xl font-bold mt-3 mb-2"
+              >
                 Department
               </p>
-              <p class="text-gray-600">
+              <p class="text-gray-600 dark:text-gray-100">
                 Actualis at conscius supponam ac. Vocem si longo mo co veris
                 entis. Similibus essentiae.
               </p>
             </div>
+
             <div
-              class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
+              class="hover:bg-white dark:hover:bg-gray-800 border border-transparent dark:hover:border-gray-700 hover:shadow-lg p-4 rounded-md transition-all"
             >
-              <button class="text-gray-600 bg-slate-100 p-2 rounded-md">
+              <button
+                class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1384,18 +1456,23 @@
                   />
                 </svg>
               </button>
-              <p class="text-gray-600 text-xl font-bold mt-3 mb-2">
+              <p
+                class="text-gray-600 dark:text-gray-100 text-xl font-bold mt-3 mb-2"
+              >
                 Super Fast
               </p>
-              <p class="text-gray-600">
+              <p class="text-gray-600 dark:text-gray-100">
                 Actualis at conscius supponam ac. Vocem si longo mo co veris
                 entis. Similibus essentiae.
               </p>
             </div>
+
             <div
-              class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
+              class="hover:bg-white dark:hover:bg-gray-800 border border-transparent dark:hover:border-gray-700 hover:shadow-lg p-4 rounded-md transition-all"
             >
-              <button class="text-gray-600 bg-slate-100 p-2 rounded-md">
+              <button
+                class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1411,18 +1488,23 @@
                   />
                 </svg>
               </button>
-              <p class="text-gray-600 text-xl font-bold mt-3 mb-2">
+              <p
+                class="text-gray-600 dark:text-gray-100 text-xl font-bold mt-3 mb-2"
+              >
                 Detail Log
               </p>
-              <p class="text-gray-600">
+              <p class="text-gray-600 dark:text-gray-100">
                 Actualis at conscius supponam ac. Vocem si longo mo co veris
                 entis. Similibus essentiae.
               </p>
             </div>
+
             <div
-              class="hover:bg-white hover:shadow-lg p-4 rounded-md transition-all"
+              class="hover:bg-white dark:hover:bg-gray-800 border border-transparent dark:hover:border-gray-700 hover:shadow-lg p-4 rounded-md transition-all"
             >
-              <button class="text-gray-600 bg-slate-100 p-2 rounded-md">
+              <button
+                class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1438,8 +1520,12 @@
                   />
                 </svg>
               </button>
-              <p class="text-gray-600 text-xl font-bold mt-3 mb-2">Analytics</p>
-              <p class="text-gray-600">
+              <p
+                class="text-gray-600 dark:text-gray-100 text-xl font-bold mt-3 mb-2"
+              >
+                Analytics
+              </p>
+              <p class="text-gray-600 dark:text-gray-100">
                 Actualis at conscius supponam ac. Vocem si longo mo co veris
                 entis. Similibus essentiae.
               </p>
@@ -1449,9 +1535,9 @@
       </section>
 
       <!-- loading section : showed when fetching data from backend -->
-      <section class="bg-slate-100 py-32">
+      <section class="bg-slate-100 dark:bg-gray-800 py-32">
         <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
-          <div class="text-center text-gray-600 mb-12">
+          <div class="text-center text-gray-600 dark:text-gray-100 mb-12">
             <p class="text-bold text-4xl mb-2">Blog Posts</p>
             <p>
               Lorem ipsum dolor sit amet consectet. Delectus sequi illum
@@ -1459,8 +1545,9 @@
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- c : 1 -->
             <div
-              class="bg-white rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
+              class="hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border border-transparent dark:border-gray-700 rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
             >
               <div
                 class="w-32 h-32 rounded-full bg-gray-200 animate-pulse"
@@ -1482,8 +1569,9 @@
                 ></div>
               </div>
             </div>
+            <!-- c : 2 -->
             <div
-              class="bg-white rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
+              class="hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border border-transparent dark:border-gray-700 rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
             >
               <div
                 class="w-32 h-32 rounded-full bg-gray-200 animate-pulse"
@@ -1505,8 +1593,9 @@
                 ></div>
               </div>
             </div>
+            <!-- c : 3 -->
             <div
-              class="bg-white rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
+              class="hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border border-transparent dark:border-gray-700 rounded-md shadow p-5 flex items-center justify-center flex-col gap-5"
             >
               <div
                 class="w-32 h-32 rounded-full bg-gray-200 animate-pulse"
@@ -1529,11 +1618,14 @@
               </div>
             </div>
 
-            <div class="bg-white rounded-md shadow p-5 space-y-3">
+            <!-- r : 1 -->
+            <div
+              class="hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border border-transparent dark:border-gray-700 rounded-md shadow p-5 space-y-3"
+            >
               <div
                 class="h-44 w-full bg-gray-200 animate-pulse rounded-lg"
               ></div>
-              <div class="space-y-3">
+              <div class="space-y-5">
                 <div
                   class="w-8/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                 ></div>
@@ -1554,7 +1646,7 @@
                     class="w-7/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                   ></div>
                 </div>
-                <div class="flex-gap-2">
+                <div class="flex flex-gap-2">
                   <div
                     class="w-16 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                   ></div>
@@ -1567,11 +1659,14 @@
                 </div>
               </div>
             </div>
-            <div class="bg-white rounded-md shadow p-5 space-y-3">
+            <!-- r : 2 -->
+            <div
+              class="hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border border-transparent dark:border-gray-700 rounded-md shadow p-5 space-y-3"
+            >
               <div
                 class="h-44 w-full bg-gray-200 animate-pulse rounded-lg"
               ></div>
-              <div class="space-y-3">
+              <div class="space-y-5">
                 <div
                   class="w-8/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                 ></div>
@@ -1592,7 +1687,7 @@
                     class="w-7/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                   ></div>
                 </div>
-                <div class="flex-gap-2">
+                <div class="flex flex-gap-2">
                   <div
                     class="w-16 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                   ></div>
@@ -1605,11 +1700,14 @@
                 </div>
               </div>
             </div>
-            <div class="bg-white rounded-md shadow p-5 space-y-3">
+            <!-- r : 3 -->
+            <div
+              class="hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border border-transparent dark:border-gray-700 rounded-md shadow p-5 space-y-3"
+            >
               <div
                 class="h-44 w-full bg-gray-200 animate-pulse rounded-lg"
               ></div>
-              <div class="space-y-3">
+              <div class="space-y-5">
                 <div
                   class="w-8/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                 ></div>
@@ -1630,7 +1728,7 @@
                     class="w-7/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                   ></div>
                 </div>
-                <div class="flex-gap-2">
+                <div class="flex flex-gap-2">
                   <div
                     class="w-16 h-5 rounded-full shadow bg-gray-200 animate-pulse"
                   ></div>
@@ -1649,38 +1747,58 @@
     </main>
 
     <!-- footer section -->
-    <footer class="bg-white py-14 border-t">
+    <footer
+      class="bg-white dark:bg-gray-800 py-14 border-t dark:border-t-gray-700"
+    >
       <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
         <div
           class="flex flex-col lg:flex-row justify-between py-0 lg:py-12 gap-12 lg:gap-0"
         >
           <div>
-            <p class="uppercase font-bold mb-2 text-gray-600">Company</p>
+            <p
+              class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100"
+            >
+              Company
+            </p>
             <ul>
-              <li class="text-gray-600">Who We Are</li>
-              <li class="text-gray-600">Contact Us</li>
-              <li class="text-gray-600">Support</li>
+              <li class="text-gray-600 dark:text-gray-100">Who We Are</li>
+              <li class="text-gray-600 dark:text-gray-100">Contact Us</li>
+              <li class="text-gray-600 dark:text-gray-100">Support</li>
             </ul>
           </div>
           <div>
-            <p class="uppercase font-bold mb-2 text-gray-600">Business</p>
+            <p
+              class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100"
+            >
+              Business
+            </p>
             <ul>
-              <li class="text-gray-600">Claim Business</li>
-              <li class="text-gray-600">Advertise</li>
+              <li class="text-gray-600 dark:text-gray-100">Claim Business</li>
+              <li class="text-gray-600 dark:text-gray-100">Advertise</li>
             </ul>
           </div>
           <div>
-            <p class="uppercase font-bold mb-2 text-gray-600">Company</p>
+            <p
+              class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100"
+            >
+              Company
+            </p>
             <ul>
-              <li class="text-gray-600">Who We Are</li>
-              <li class="text-gray-600">Contact Us</li>
-              <li class="text-gray-600">Support</li>
-              <li class="text-gray-600">Privacy Policy</li>
-              <li class="text-gray-600">Terms & Conditions</li>
+              <li class="text-gray-600 dark:text-gray-100">Who We Are</li>
+              <li class="text-gray-600 dark:text-gray-100">Contact Us</li>
+              <li class="text-gray-600 dark:text-gray-100">Support</li>
+              <li class="text-gray-600 dark:text-gray-100">Privacy Policy</li>
+              <li class="text-gray-600 dark:text-gray-100">
+                Terms & Conditions
+              </li>
             </ul>
           </div>
           <div>
-            <p class="uppercase font-bold mb-2 text-gray-600">Follow Us</p>
+            <p
+              class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100"
+            >
+              Follow Us
+            </p>
             <div class="flex gap-2">
               <div class="flex gap-2">
                 <a href="">
@@ -1697,10 +1815,24 @@
                 </a>
               </div>
             </div>
+
+            <!-- dark mode btn -->
+            <div class="mt-10">
+              <label class="switch relative block w-[4rem] h-9">
+                <input
+                  type="checkbox"
+                  id="toggle-btn"
+                  class="hidden peer checked:bg-black"
+                />
+                <span
+                  class="bg-yellow-400 shadow-md shadow-inner peer-checked:bg-gray-700 peer-checked:before:translate-x-full transition-all shadow-lg absolute inset-0 cursor-pointer rounded-full before:shadow-sm before:shadow-gray-800 before:content-['☀'] before:flex before:justify-center before:items-center before:absolute before:h-7 before:w-7 before:bg-white dark:bg-gray-800 before:rounded-full before:inset-1 peer-checked:before:bg-white dark:peer-checked:before:bg-gray-800 peer-checked:before:content-['🌙'] before:transition-all"
+                ></span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="pt-12">
-          <p class="text-gray-600 tex-sm">
+          <p class="text-gray-600 dark:text-gray-100 tex-sm">
             2021 © Tail List. All rights reserved.
           </p>
         </div>
