@@ -6,15 +6,26 @@
 
 .transparent-nav {
   @apply bg-transparent shadow;
-  /* background-color: transparent;
-  color: white; */
 }
 .bg-nav {
   @apply backdrop-filter backdrop-blur bg-white bg-opacity-30 shadow;
-  /* background-color: white;
-  color: gray; */
 }
 
+/* reusing styles  */
+.popular-card {
+  @apply bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-md shadow overflow-hidden  transition-all;
+}
+.popular-card:hover {
+  @apply shadow-xl;
+}
+
+.category-card {
+  @apply p-4 bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-60 shadow  transition-all space-y-5 rounded-lg;
+}
+.category-card:hover {
+  @apply shadow-lg;
+}
+/*  */
 ::-webkit-scrollbar {
   width: 8px;
 }
